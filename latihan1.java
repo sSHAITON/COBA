@@ -10,6 +10,8 @@ class LibrayItem {
         System.out.println("================Informasi Perpustakaan================");
         System.out.println("Judul: " + this.title);
         System.out.println("Tahun: " + this.year);
+        System.out.println("Atribut1: " + this.atribut1);
+        System.out.println("Atribut2: " + this.atribut2);
     }
 
     public void LibraryItem(String title, int year, String atribut1, int atribut2) {
@@ -32,10 +34,12 @@ class Book extends LibrayItem {
 
     @Override
     public void displayinfo() {
-        super.displayinfo();
+        System.out.println("================Informasi Perpustakaan================");
+        System.out.println("========================BUKU==========================");
+        System.out.println("Judul: " + this.title);
+        System.out.println("Tahun: " + this.year);
         System.out.println("Author: " + this.Author);
         System.out.println("ISBN: " + this.ISBN);
-
     }
 
 }
@@ -46,16 +50,18 @@ class DigitalMedia extends LibrayItem {
 
     public DigitalMedia(String title, int year, String Format, int Size) {
         this.Format = Format;
-        ;
         this.Size = Size;
         super.LibraryItem(title, year, Format, Size);
     }
 
     @Override
     public void displayinfo() {
-        super.displayinfo();
-        System.out.println("Format: " + Format);
-        System.out.println("Size: " + Size + "MB");
+        System.out.println("================Informasi Perpustakaan================");
+        System.out.println("=======================Media==========================");
+        System.out.println("Judul: " + this.title);
+        System.out.println("Tahun: " + this.year);
+        System.out.println("Format: " + this.Format);
+        System.out.println("Size: " + this.Size);
     }
 }
 
