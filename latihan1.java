@@ -61,7 +61,7 @@ class DigitalMedia extends LibrayItem {
         System.out.println("Judul: " + this.title);
         System.out.println("Tahun: " + this.year);
         System.out.println("Format: " + this.Format);
-        System.out.println("Size: " + this.Size);
+        System.out.println("Size: " + this.Size + "MB");
     }
 }
 
